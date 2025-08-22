@@ -1,1 +1,133 @@
-# LANDING-REPOSITORY
+# LANDING-REPOSITORY[index.html](https://github.com/user-attachments/files/21931231/index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PMS - Project Management Solutions</title>
+  <meta name="description" content="Practical Excel toolkits and solutions for freelancers, small businesses, and startups." />
+  <link rel="icon" type="image/png" href="LOGO.png">
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: #0f172a;
+      --text: #e5e7eb;
+      --muted: #a7b0c5;
+      --accent: #60a5fa;
+      --accent-2: #93c5fd;
+      --border: #1f2a44;
+      --shadow: 0 10px 25px rgba(0,0,0,.25);
+      --radius: 16px;
+      --maxw: 1200px;
+    }
+    html.startup{
+      --bg: #0d0d0f;
+      --card: #111114;
+      --text: #f5f5f5;
+      --muted: #cfcfd6;
+      --accent: #ff6a3d;
+      --accent-2: #29b6f6;
+      --border: #23232a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family: Inter, system-ui, sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrapper{max-width:var(--maxw);margin-inline:auto;padding:32px}
+    .navbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .brand img{width:40px;height:40px;object-fit:contain;border-radius:8px;box-shadow:var(--shadow)}
+    .theme-toggle{display:flex;align-items:center;gap:8px;background:transparent;border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:999px;cursor:pointer}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:12px;}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:28px;border:1px solid var(--border);border-radius:var(--radius);background:linear-gradient(180deg,rgba(255,255,255,0.04),transparent)}
+    .hero h1{font-size:clamp(28px,4vw,48px);line-height:1.1;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:#101828;color:var(--text);box-shadow:var(--shadow);cursor:pointer}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0b1020;border:none}
+    .btn.secondary{background:transparent;color:var(--text)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .card{border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .card h3{margin:.2rem 0 .6rem;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+    section{margin:40px 0}
+    h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 12px}
+    .feature-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{padding:18px;border:1px dashed var(--border);border-radius:12px}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .price-card{padding:22px;border:1px solid var(--border);border-radius:16px;background:var(--card)}
+    .price{font-size:32px;font-weight:800}
+    .muted{color:var(--muted)}
+    .footer{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted)}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid, .feature-list, .pricing{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar" aria-label="Primary">
+      <div class="brand"><img src="LOGO.png" alt="PMS Logo"><span>PMS - Project Management Solutions</span><span class="pill" id="style-pill">Corporate</span></div>
+      <button class="theme-toggle" id="toggleStyle" aria-pressed="false" aria-label="Toggle style">
+        <span>Switch style</span>
+      </button>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <div class="pill">Freelancers • Small Businesses • Startups</div>
+        <h1>Simplify Work. Grow Faster.</h1>
+        <p>Practical Excel toolkits that give you task clarity, money control, and growth tracking—without complex software.</p>
+        <div class="cta-row">
+          <a href="#pricing" class="btn primary">Get the bundle</a>
+          <a href="#products" class="btn secondary">See what’s inside</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">What's inside</h3>
+        <ul class="muted" style="margin:8px 0 0 18px">
+          <li>Freelancer Toolkit</li>
+          <li>Small Business Toolkit</li>
+          <li>Startup Toolkit</li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="pricing">
+      <h2>Simple Pricing</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Single Toolkit</h3>
+          <p class="muted">Choose Freelancer • Small Biz • Startup</p>
+          <div class="price">€39–€49</div>
+          <a href="#" class="btn primary" style="margin-top:8px">Get a single toolkit</a>
+        </div>
+        <div class="price-card" style="border-width:2px">
+          <h3>Complete Bundle</h3>
+          <p class="muted">All 3 toolkits + guides</p>
+          <div class="price">€79</div>
+          <a href="#" class="btn primary" style="margin-top:8px">Get the bundle</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> PMS - Project Management Solutions</div>
+      <div class="muted">Questions? <a href="#">Contact us</a></div>
+    </footer>
+  </div>
+
+  <script>
+    const html = document.documentElement;
+    const btn = document.getElementById('toggleStyle');
+    const pill = document.getElementById('style-pill');
+    btn.addEventListener('click', ()=>{
+      const startup = html.classList.toggle('startup');
+      btn.setAttribute('aria-pressed', startup ? 'true' : 'false');
+      pill.textContent = startup ? 'Startup' : 'Corporate';
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
